@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fragmentos</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_fragment__listado">Fragment_Listado</string>
+    <string name="title_activity_fragment_detalle">fragment_detalle</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detalle">Detalle</string>
+</resources>
