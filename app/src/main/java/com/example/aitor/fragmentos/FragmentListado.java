@@ -34,7 +34,7 @@ public class FragmentListado extends Fragment {
                              ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_fragment_listado, container, false);
+        return inflater.inflate(R.layout.fragment_listado, container, false);
     }
 
     @Override

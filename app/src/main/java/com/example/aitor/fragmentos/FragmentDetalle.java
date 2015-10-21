@@ -12,7 +12,7 @@ public class FragmentDetalle extends Fragment   {
                              ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_fragment_detalle, container, false);
+        return inflater.inflate(R.layout.fragment_detalle, container, false);
     }
 
     public void mostrarDetalle(String texto) {
