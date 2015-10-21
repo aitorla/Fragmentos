@@ -1,22 +1,22 @@
 package com.example.aitor.fragmentos;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
-public class MainActivity extends AppCompatActivity implements FragmentListado.CorreosListener {
+public class MainActivity extends AppCompatActivity
+        implements FragmentListado.CorreosListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-     //   FragmentListado frgListado = (FragmentListado)getSupportFragmentManager().findFragmentById(R.id.FrgListado);
+        FragmentListado frgListado = (FragmentListado)getSupportFragmentManager().findFragmentById(R.id.FrgListado);
 
-       // frgListado.setCorreosListener(this);
+        frgListado.setCorreosListener(this);
     }
 
     @Override
@@ -47,11 +47,12 @@ public class MainActivity extends AppCompatActivity implements FragmentListado.C
                 (getSupportFragmentManager().findFragmentById(R.id.FrgDetalle) != null);
 
         if(hayDetalle) {
-            //((FragmentDetalle)getSupportFragmentManager().findFragmentById(R.id.FrgDetalle)).mostrarDetalle(c.getTexto());
+            ((FragmentDetalle)getSupportFragmentManager()
+                    .findFragmentById(R.id.FrgDetalle)).mostrarDetalle(c.getTexto());
         }
         else {
-            Intent i = new Intent(this, Detalle.class);
-            i.putExtra(Detalle.EXTRA_TEXTO, c.getTexto());
+            Intent i = new Intent(this, DetalleActivity.class);
+            i.putExtra(DetalleActivity.EXTRA_TEXTO, c.getTexto());
             startActivity(i);
         }
     }

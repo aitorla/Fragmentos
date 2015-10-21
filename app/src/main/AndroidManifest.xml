@@ -17,15 +17,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Fragment_Listado"
+            android:name=".Fragment_fragment_listado"
             android:label="@string/title_activity_fragment__listado" >
         </activity>
         <activity
-            android:name=".fragment_detalle"
+            android:name=".fragment_fragment_detalle"
             android:label="@string/title_activity_fragment_detalle" >
         </activity>
+
         <activity
-            android:name=".Detalle"
+            android:name=".DetalleActivity"
             android:label="@string/title_activity_detalle" >
         </activity>
     </application>
