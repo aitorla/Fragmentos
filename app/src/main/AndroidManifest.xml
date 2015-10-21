@@ -16,14 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Fragment_fragment_listado"
-            android:label="@string/title_activity_fragment__listado" >
-        </activity>
-        <activity
-            android:name=".fragment_fragment_detalle"
-            android:label="@string/title_activity_fragment_detalle" >
-        </activity>
+
 
         <activity
             android:name=".DetalleActivity"
